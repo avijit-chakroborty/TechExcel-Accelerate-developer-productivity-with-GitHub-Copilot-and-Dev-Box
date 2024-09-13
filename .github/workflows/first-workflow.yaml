@@ -22,7 +22,7 @@ jobs:
   job1:
     # We can run jobs on GitHub hosted VM runners in Windows, Ubuntu, and Mac OS.
     # We can also run jobs on self-hosted hardware.
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # Each job contains one or more steps. A step needs to have at least a name and a command.
     steps:
@@ -41,7 +41,7 @@ jobs:
     # Job 2 will only run after job 1 completes.
     # Removing this 'needs' section would make the jobs run simultaneously.
     needs: job1
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Cowsays
