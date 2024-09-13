@@ -260,3 +260,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+ # Local configuration file for developers
+ src/Application/src/RazorPagesTestSample/config.json
